@@ -54,11 +54,10 @@ public class Utilidades {
 		return menor;
 	}
 	
-	public int [] burbuja(int[] v)
-    {
+	public int [] burbuja(int[] v) {
       int auxiliar;
       int[] ordenado;
-      for(int i = 2; i < v.length; i++)
+      for(int i = 1; i < v.length; i++)
       {
         for(int j = 0;j < v.length-i;j++)
         {
