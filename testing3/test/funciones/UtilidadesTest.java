@@ -41,7 +41,7 @@ class UtilidadesTest {
 		assertEquals(utils.cuentaDivisores(6), 6);
 		assertEquals(utils.cuentaDivisores(8), 8);
 	}
-
+	
 	@Test
 	void testDevuelveMenor() {
 		int v [] = { 0, 1, 2, 3, 4, 5 };
@@ -51,7 +51,7 @@ class UtilidadesTest {
 		int k [] = { 5, 1, -1, 0, 4, 3 };
 		assertEquals(utils.devuelveMenor(k), -1);
 	}
-
+	
 	@Test
 	void testBurbuja() {
 		int x [] = {5, 3, 4, 2, 1};

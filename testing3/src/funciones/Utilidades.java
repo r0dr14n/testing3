@@ -4,6 +4,14 @@ public class Utilidades {
 
 	public static final int HORASJORNADA = 38;
 	
+	/**
+	 * Metodo de la clase que devulve la representación textual de la nota.
+	 * pasada como parametro.
+	 * @param nota double con la nota a comprobar.
+	 * @return Una cadena de tipo String con el teto resultante (Suspenso,
+	 * Bien, Notable, Sobresaliente, Matricula).
+	 * @throws ArithmeticException cuando la nota no está entre 0 y 10.
+	 */
 	public String devuelveNota(double nota) {
 		String descripcion = "Matrícula";
 		
@@ -23,6 +31,12 @@ public class Utilidades {
 		return descripcion;
 	}
 	
+	
+	/**
+	 * Metodo de la clase que calcula el salario del empleado.
+	 * @param numHoras (entero), precioHoras (doble), precioExtras (doble).
+	 * @return Un double con el salario.
+	 */
 	public double calculaSalario(int numHoras, double precioHoras, double precioExtras) {
 		int extras=0;
 		int horas=numHoras;
@@ -33,6 +47,11 @@ public class Utilidades {
 		return horas*precioHoras+extras*precioExtras;		
 	}
 	
+	/**
+	 * Metodo de la clase que cuenta los divisores entre 2.
+	 * @param num int.
+	 * @return Un int con los divisores.
+	 */
 	public int cuentaDivisores(int num) {
 		int cuenta=0;
 		
@@ -44,6 +63,12 @@ public class Utilidades {
 		return cuenta;
 	}
 	
+	/**
+	 * Metodo de la clase que devuelve el menor valor del vector.
+	 * pasado como parametro.
+	 * @param v int.
+	 * @return Un double con el menor valor del vector.
+	 */
 	public double devuelveMenor(int v[]) {
 		double menor=v[0];
 		for (int i = 0; i < v.length; i++) {
@@ -54,6 +79,12 @@ public class Utilidades {
 		return menor;
 	}
 	
+	
+	/**
+	 * Metodo de la clase que ordena los numeros de un vector de menor a mayor.
+	 * @param v int.
+	 * @return un vector con los valores ordenados.
+	 */
 	public int [] burbuja(int[] v) {
       int auxiliar;
       int[] ordenado;
